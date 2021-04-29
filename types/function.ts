@@ -26,3 +26,11 @@ function addAndHandle(n1: number, n2:number, cb: (num: number) => void){
 }
 
 console.log(addAndHandle(1,2, (result) => {}))
+
+
+// never type
+function generateError(message: string, statusCode: number) : never{
+    throw {message, statusCode};
+}
+
+console.log(generateError('An error occurred', 500))

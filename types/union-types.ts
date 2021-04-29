@@ -24,3 +24,13 @@ console.log(combine1('1','20', 'as-number'));
 
 // Type Alias / Custom Types
 type Combinable = number | string;
+
+// unknown type - it is not union type
+let username: unknown;
+username = 'Rohit';
+
+let tempUser: string;
+if(typeof username === 'string'){
+    tempUser = username;
+}
+
