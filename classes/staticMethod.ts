@@ -1,8 +1,8 @@
-class Department3 {
+class Department2 {
     constructor(){}
     static AddEmployee(emp: string){
         return {emp}
     }
 }
 
-console.log(Department3.AddEmployee('Rohit'))
+console.log(Department2.AddEmployee('Rohit'))
